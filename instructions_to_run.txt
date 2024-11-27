@@ -1,0 +1,16 @@
+1.Ensure the files leak.h, example.c, test.c,leak_detector.c and Makefile are in the same project root directory.​
+
+---Run the following commands:​
+
+2.Compile the project using the command: make all​
+
+ --This will compile example.c and create an executable named example.​
+
+3.Run the program using the command: ./example​
+
+--The program will excute, and atexit() will call generate_report() at the end of the report memory that hasn't been freed.​
+--This will give the output report
+
+4.Compile and run test.c uisng the Makefile target using the command: make runtest.​(optional)
+
+​
